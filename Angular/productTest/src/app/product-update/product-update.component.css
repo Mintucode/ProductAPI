@@ -1,0 +1,38 @@
+.div-success{
+    color: green;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.product-header{
+    color: blue;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    margin: 0px;
+    
+
+}
+.demo-style{
+    height: 10px;
+}
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.product-header{
+    color: blue;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    margin: 0px;
+}
+.add-product-main{
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+.div-success{
+    color: green;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 50px;
+}

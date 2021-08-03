@@ -1,0 +1,26 @@
+<h1 class="product-header">
+  <span class="font-header">Product Data</span>
+</h1>
+<div class="div-main">
+  <div class="product-div">
+    <a  routerLink="/productView" class="link-style" (click)="IsDisplay()" >View Product</a>
+  </div>
+  <div class="product-div">
+    <a routerLink="/addProduct" class="link-style" (click)="IsDisplay()">Add Product</a>
+  </div>
+  <div class="product-div">
+    <a routerLink="/updateProduct" class="link-style" (click)="IsDisplay()">Update Product</a>
+  </div>
+  <div class="product-div">
+    <a routerLink="/deleteProduct" class="link-style" (click)="IsDisplay()">Delete Product</a>
+  </div>
+</div>
+<div class="demo-style">
+
+</div>
+
+<div class="div-contain-view" *ngIf="isActive">
+  <router-outlet></router-outlet>
+
+</div>
+

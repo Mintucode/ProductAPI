@@ -1,0 +1,21 @@
+.product-header{
+    color: blue;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    margin: 0px;
+    
+
+}
+.demo-style{
+    height: 10px;
+}
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.div-success{
+    color: green;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 50px;
+}

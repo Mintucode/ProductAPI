@@ -1,0 +1,30 @@
+<h1 class="product-header">Add Product</h1>
+<div class="add-product-main" *ngIf="isCreated">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <td>Product ID:</td>
+                <td><input type="text" formControlName="productid"/></td>
+            </tr>
+            <tr>
+                <td>Product Name:</td>
+                <td><input type="text" formControlName="productname"/></td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td><input type="number" formControlName="price" /></td>
+            </tr>
+            <tr>
+                <td>Product Discription:</td>
+                <td><input type="text" formControlName="description"/></td>
+            </tr>
+        </table>
+        <div >
+            <button type="submit">Save</button>
+        </div>
+       
+    </form>
+</div>
+<h1 class="div-success" *ngIf="!isCreated">
+   Successfully Created.....
+</h1>

@@ -1,0 +1,27 @@
+<h1 class="product-header">Product List</h1>
+<div class="demo-style"></div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>ProductId</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>product Description</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr *ngFor="let list of productList">
+                   <!--<app-list-product [product]="list"></app-list-product>-->
+                   <td>{{list.productid}}</td>
+                   <td>{{list.productname}}</td> 
+                   <td>{{list.price}}</td>
+                   <td>{{list.description}}</td>
+                </tr>
+            
+        </tbody>
+    </table>
+    
+</div>

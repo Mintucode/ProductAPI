@@ -1,0 +1,60 @@
+<h1 class="product-header">Product List</h1>
+<div class="demo-style"></div>
+<div *ngIf="isUpdate">
+    <table>
+        <thead>
+            <tr>
+                <th>ProductId</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>product Description</th>
+                <th>Edit</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr *ngFor="let list of productList">
+                   <td>{{list.productid}}</td>
+                   <td>{{list.productname}}</td> 
+                   <td>{{list.price}}</td>
+                   <td>{{list.description}}</td>
+                   <td><button type="submit" (click)="onUpdate(list.productid)">Edit</button></td>
+                </tr>
+            
+        </tbody>
+    </table>
+    
+</div>
+
+<!--Update field-->
+<div class="add-product-main" *ngIf="!isUpdate" >
+    <form [formGroup]="productForm"  (ngSubmit)="onUpdateProduct()">
+        <table>
+            <tr>
+                <td>Product ID:</td>
+                <td><input type="text" formControlName="productid" readonly/></td>
+            </tr>
+            <tr>
+                <td>Product Name:</td>
+                <td><input type="text" formControlName="productname"/></td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td><input type="number" formControlName="price" /></td>
+            </tr>
+            <tr>
+                <td>Product Discription:</td>
+                <td><input type="text" formControlName="description"/></td>
+            </tr>
+        </table>
+        <div >
+            <button type="submit">Save</button>
+        </div>
+       
+    </form>
+</div>
+
+
+
+

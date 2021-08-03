@@ -1,0 +1,43 @@
+.product-header{
+    color: blue;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    margin: 0px;
+
+}
+.font-header{
+    padding-left: 10px;
+}
+.product-div{
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    background:darkgrey;
+    text-align: center;
+    vertical-align:middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-style{
+    color:navy;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.div-main{
+    padding-left: 10px;
+}
+.div-contain-view{
+    width: 800px;
+    height: auto;
+    border: 2px solid black;
+    margin: auto;
+ 
+
+
+}
+.demo-style{
+    margin-top: 30px;
+}
